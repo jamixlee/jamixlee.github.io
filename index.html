@@ -1,182 +1,467 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title></title>
-	    	<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" type="text/css" />
-		<link rel="stylesheet" href="my.css" />
-        <style>
-			/* App custom styles */
-        </style>
-	    	<script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
-		<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
-		<script src="my.js"></script>
-    </head>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Chung-Yeon Lee</title>
+
+    <meta name="author" content="Chung-Yeon Lee">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	
-    <body>
-        <!-- HOME -->
-        <div data-role="page" id="home">
-            <div id="home" data-theme="" data-role="header">
-                <h3>Test</h3>
-                <!-- navigation -->
-                <div data-role="navbar" data-iconpos="top">
-                    <ul>
-                        <li><a href="#home" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">처음</a></li>
-                        <li><a href="#aboutus" data-theme="" data-icon="info">소개</a></li>
-                        <li><a href="#gallery" data-theme="" data-icon="grid">사진</a></li>
-                        <li><a href="#wedding" data-theme="" data-icon="star">예식</a></li>
-                    </ul>
-                </div>
-				<div data-role="content" align="center">
-					"Absence makes the heart grow fonder..."<br /><br />
-					<font style="color:#FFFF00">so we marry~!</font>
+	<script type="text/javascript">
+	  function toggleThumb(id, show) {
+		document.getElementById(id).style.opacity = show ? "1" : "0";
+	  }
+	</script>
+	
+	<script type="text/javascript">
+	  window.onload = function() {
+		toggleThumb('placenet', false);
+		toggleThumb('icra22', false);
+		toggleThumb('vpf', false);
+		toggleThumb('ovslam', false);
+		toggleThumb('tidyboy', false);
+		toggleThumb('aupair', false);
+		toggleThumb('dma_ijcai', false);
+		toggleThumb('cogsci14', false);
+		toggleThumb('srfm', false);
+		toggleThumb('eface', false);
+		toggleThumb('starsh', false);
+	  }
+	</script>
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">Chung-Yeon Lee</p>
+				<p>
+                  I'm a research scientist at <a href="https://surromind.ai/">Surromind</a> in Seoul, where I lead a small research team focused on multimodal, physical, and generative AI models and their applications across various domains.
+				  At Surromind, I've worked on sound- and vibration-based fault diagnosis systems, service and field robot learning, and generative models (LLM, VLM, VLA), among others.
+				  I did my PhD at Seoul National University, where I was advised by <a href="https://bi.snu.ac.kr/members/byoung-tak-zhang.html">Byoung-Tak Zhang</a>.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:jamixlee@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="./cylee_cv.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=IyT-d80AAAAJ">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/jamixlee/">Github</a>
+                </p>
+              </td>
+              <!--// Profile Picture //-->
+			  <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/cylee_profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" src="images/cylee_profile.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          
+		  <!--// Research //-->
+		  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+				  I'm interested in bridging AI and service robots, aiming to build intelligent agents capable of spatial reasoning, high-level planning, and adaptive interaction in complex real-world environments.
+				  <!--// Some papers are <span class="highlight">highlighted</span>. //-->
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          
+		  <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+			<!--// PlaceNet //-->
+			<tr onmouseover="toggleThumb('placenet', true)" onmouseout="toggleThumb('placenet', false)"> <!--// bgcolor="#ffffd0" //-->
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='placenet'><video  width=100% height=100% muted autoplay loop>
+				    <source src="images/placenet.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+				  </div>
+				  <img src='images/placenet.jpg' width="160">
 				</div>
-                <div style=" text-align:center">
-                    <img style="width: 200px; height: 200px" src="./imgs/hands.jpg" />
-                </div>
-				<div data-role="content" align="center">
-					2013.01.05
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">PlaceNet: Neural Spatial Representation Learning with Multimodal Attention</span>
+				</a>
+				<br>
+				<strong>Chung-Yeon Lee</strong>, Youngjae Yoo, Byoung-Tak Zhang
+				<br>
+				<em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2022</font>
+				<br>
+				<a href="https://github.com/jamixlee/placenet" target="_blank">code</a>
+				/
+				<a href="https://www.ijcai.org/proceedings/2022/0144.pdf" target="_blank">paper</a>
+				/
+				<a href="https://ijcai-22.org/video/index0039.html?vid=38984936" target="_blank">video</a>
+				<p></p>
+				<p>
+				A multimodal attention-based neural representation model that integrates RGB, depth, and semantic information to enable generalizable spatial representations and novel-view rendering across diverse indoor environments.
+				</p>
+			  </td>
+			</tr>
+
+			<!--// Multimodal Anomaly Detection //-->
+			<tr onmouseover="toggleThumb('icra22', true)" onmouseout="toggleThumb('icra22', false)">
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='icra22'><video  width=100% height=100% muted autoplay loop>
+				    <source src="images/icra22.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+				  </div>
+				  <img src='images/icra22.jpg' width=100%>
 				</div>
-            </div>
-        </div>
-		
-		<!-- ABOUT US -->
-		<div data-role="page" id="aboutus">
-            <div id="aboutus" data-theme="" data-role="header">
-                <h3>Test</h3>
-				<!-- navigation -->
-                <div data-role="navbar" data-iconpos="top">
-                    <ul>
-                        <li><a href="#home" data-theme="" data-icon="home">처음</a></li>
-                        <li><a href="#aboutus" data-theme="" data-icon="info" class="ui-btn-active ui-state-persist">소개</a></li>
-                        <li><a href="#gallery" data-theme="" data-icon="grid">사진</a></li>
-                        <li><a href="#wedding" data-theme="" data-icon="star">예식</a></li>
-                    </ul>
-                </div>
-				<div data-role="content" align="center">신랑신부를 소개합니다!</div>
-                <div class="ui-grid-a">
-                    <div class="ui-block-a" align="center">
-						<img style="width: 150px; height: 200px" src="./imgs/pro_cy.jpg" />
-					</div>
-                    <div class="ui-block-b" align="center">
-						<img style="width: 150px; height: 200px" src="./imgs/pro_my.jpg" />
-					</div>
-					<div class="ui-block-a" align="center">
-						<p><a href="https://www.facebook.com/jamixlee" target="_blank"><font color="#FFFFFF">이충연</font></a></p>
-						<p></p>
-					</div>
-                    <div class="ui-block-b" align="center">
-						<p><a href="https://www.facebook.com/100004796070368" target="_blank"><font color="#FFFFFF">이민영</font></a></p>
-						<p></p>
-					</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+					<span class="papertitle">Multimodal Anomaly Detection based on Deep Auto-Encoder for Object Slip Perception of Mobile Manipulation Robots</span>
+				</a>
+				<br>
+				Youngjae Yoo*, <strong>Chung-Yeon Lee</strong>*, Byoung-Tak Zhang
+				<br>
+				<em>International Conference on Robotics and Automation (ICRA)</em>, 2022</font>
+				<br>
+				<a href="https://arxiv.org/abs/2403.03563" target="_blank">paper</a>
+				/
+				<a href="https://youtu.be/_5ST5rr59cA" target="_blank">video</a>
+				<p></p>
+				<p>
+				A deep autoencoder framework combining RGB, depth, audio, and force-torque sensor data to detect object slip anomalies in mobile manipulation robots by learning latent representations of normal conditions and identifying deviations in real-world noisy environments.
+				</p>
+			  </td>
+			</tr>
+
+			<!--// Visual Perception Framework //-->
+			<tr onmouseover="toggleThumb('vpf', true)" onmouseout="toggleThumb('vpf', false)">
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='vpf'><video  width=100% height=100% muted autoplay loop>
+				    <source src="images/vpf.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+				  </div>
+				  <img src='images/vpf.png' width=100%>
 				</div>
-            </div>
-            <div data-role="content">
-            </div>
-        </div>
-		
-		<!-- GALLERY -->
-        <div data-role="page" id="gallery">
-            <div id="gallery" data-theme="" data-role="header">
-                <h3>충연 ♥ 민영</h3>
-                <!-- navigation -->
-                <div data-role="navbar" data-iconpos="top">
-                    <ul>
-                        <li><a href="#home" data-theme="" data-icon="home">처음</a></li>
-                        <li><a href="#aboutus" data-theme="" data-icon="info">소개</a></li>
-                        <li><a href="#gallery" data-theme="" data-icon="grid" class="ui-btn-active ui-state-persist">사진</a></li>
-                        <li><a href="#wedding" data-theme="" data-icon="star">예식</a></li>
-                    </ul>
-                </div>
-                <h2>사진첩</h2>
-                <div class="ui-grid-c">
-                    <div class="ui-block-a" align="center">
-						<a href="#pic01" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic01.jpg" /></a></div>
-                    <div class="ui-block-b" align="center">
-						<a href="#pic02" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic02.jpg" /></a></div>
-                    <div class="ui-block-c" align="center">
-						<a href="#pic03" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic03.jpg" /></a></div>
-                    <div class="ui-block-d" align="center">
-						<a href="#pic04" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic04.jpg" /></a></div>
-					<div class="ui-block-a" align="center">
-						<a href="#pic05" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic05.jpg" /></a></div>
-                    <div class="ui-block-b" align="center">
-						<a href="#pic06" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic06.jpg" /></a></div>
-                    <div class="ui-block-c" align="center">
-						<a href="#pic07" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic07.jpg" /></a></div>
-                    <div class="ui-block-d" align="center">
-						<a href="#pic08" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic08.jpg" /></a></div>
-					<div class="ui-block-a" align="center">
-						<a href="#pic09" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic09.jpg" /></a></div>
-                    <div class="ui-block-b" align="center">
-						<a href="#pic10" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic10.jpg" /></a></div>
-                    <div class="ui-block-c" align="center">
-						<a href="#pic11" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic11.jpg" /></a></div>
-                    <div class="ui-block-d" align="center">
-						<a href="#pic12" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic12.jpg" /></a></div>
-					<div class="ui-block-a" align="center">
-						<a href="#pic13" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic13.jpg" /></a></div>
-                    <div class="ui-block-b" align="center">
-						<a href="#pic14" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic14.jpg" /></a></div>
-                    <div class="ui-block-c" align="center">
-						<a href="#pic15" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic15.jpg" /></a></div>
-                    <div class="ui-block-d" align="center">
-						<a href="#pic16" data-transition="flip" data-rel="popup" data-position-to="window"><img style="width: 60px; height: 60px" src="./imgs/pic16.jpg" /></a></div>
-                </div>
-				
-				<!-- 팝업 이미지 모음 -->
-				<div data-role="popup" id="pic01"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic01.jpg" /></div>
-				<div data-role="popup" id="pic02"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic02.jpg" /></div>
-				<div data-role="popup" id="pic03"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic03.jpg" /></div>
-				<div data-role="popup" id="pic04"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic04.jpg" /></div>
-				<div data-role="popup" id="pic05"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic05.jpg" /></div>
-				<div data-role="popup" id="pic06"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic06.jpg" /></div>
-				<div data-role="popup" id="pic07"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic07.jpg" /></div>
-				<div data-role="popup" id="pic08"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic08.jpg" /></div>
-				<div data-role="popup" id="pic09"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic09.jpg" /></div>
-				<div data-role="popup" id="pic10"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic10.jpg" /></div>
-				<div data-role="popup" id="pic11"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic11.jpg" /></div>
-				<div data-role="popup" id="pic12"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic12.jpg" /></div>
-				<div data-role="popup" id="pic13"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic13.jpg" /></div>
-				<div data-role="popup" id="pic14"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic14.jpg" /></div>
-				<div data-role="popup" id="pic15"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic15.jpg" /></div>
-				<div data-role="popup" id="pic16"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">닫기</a><img src="./imgs/pic16.jpg" /></div>
-            </div>
-		</div>
-						
-		<!-- WEDDING INFO -->
-        <div data-role="page" id="wedding">
-            <div id="wedding" data-theme="" data-role="header">
-                <h3>충연 ♥ 민영</h3>
-                <!-- navigation -->
-                <div data-role="navbar" data-iconpos="top">
-                    <ul>
-                        <li><a href="#home" data-theme="" data-icon="home">처음</a></li>
-                        <li><a href="#aboutus" data-theme="" data-icon="info">소개</a></li>
-                        <li><a href="#gallery" data-theme="" data-icon="grid">사진</a></li>
-                        <li><a href="#wedding" data-theme="" data-icon="star" class="ui-btn-active ui-state-persist">예식</a></li>
-                    </ul>
-                </div>
-                <h2>결혼식 안내</h2>
-				<div data-role="content" align="center">
-					장소: 아레나파크컨벤션센터<br />
-					(인천시 남구 숭의동 180-6, 도원역 4번 출구)<br /><br />
-					일시: 2013년 1월 5일 오후 1시
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Visual perception framework for an intelligent mobile robot</span>
+				</a>
+				<br>
+				<strong>Chung-Yeon Lee</strong>, Hyundo Lee, Injune Hwang, Byoung-Tak Zhang
+				<br>
+				<em> International Conference on Ubiquitous Robots and Ambient Intelligence (UR)</em>, 2020
+				<br>
+				<a href="https://ieeexplore.ieee.org/document/9144932" target="_blank">paper</a> /
+				<a href="https://youtu.be/D-ZuQt9NHI0" target="_blank">video</a>
+				<p>
+				  ROS-based visual perception framework that integrates various deep learning methods for object recognition, person identification, human pose estimation, scene captioning, and object-aware navigation.
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// Object-aware VSLAM //-->
+			<tr onmouseover="toggleThumb('ovslam', true)" onmouseout="toggleThumb('ovslam', false)">
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='ovslam'><video  width=100% height=100% muted autoplay loop>
+				    <source src="images/ovslam.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+				  </div>
+				  <img src='images/ovslam.png' width=100%>
 				</div>
-				<!-- google map -->
-				<div data-role="content" align="center">
-					<!--
-					<iframe width="300" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=ko&amp;geocode=&amp;q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%A4%91%EA%B5%AC+%EB%8F%84%EC%9B%90%EB%8F%99+%EC%95%84%EB%A0%88%EB%82%98%ED%8C%8C%ED%81%AC&amp;aq=0&amp;oq=%EC%95%84%EB%A0%88%EB%82%98%ED%8C%8C%ED%81%AC&amp;sll=37.465994,126.64298&amp;sspn=0.004296,0.008256&amp;t=m&amp;ie=UTF8&amp;hq=%EC%95%84%EB%A0%88%EB%82%98%ED%8C%8C%ED%81%AC&amp;hnear=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%A4%91%EA%B5%AC+%EB%8F%84%EC%9B%90%EB%8F%99&amp;ll=37.46607,126.643009&amp;spn=0.004258,0.00751&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
-					-->
-					<img style="width: 300px; height: 266px" src="./imgs/map.jpg" /><br /><small>
-					<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=ko&amp;geocode=&amp;q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%A4%91%EA%B5%AC+%EB%8F%84%EC%9B%90%EB%8F%99+%EC%95%84%EB%A0%88%EB%82%98%ED%8C%8C%ED%81%AC&amp;aq=0&amp;oq=%EC%95%84%EB%A0%88%EB%82%98%ED%8C%8C%ED%81%AC&amp;sll=37.465994,126.64298&amp;sspn=0.004296,0.008256&amp;t=m&amp;ie=UTF8&amp;hq=%EC%95%84%EB%A0%88%EB%82%98%ED%8C%8C%ED%81%AC&amp;hnear=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%A4%91%EA%B5%AC+%EB%8F%84%EC%9B%90%EB%8F%99&amp;ll=37.46607,126.643009&amp;spn=0.004258,0.00751&amp;z=16&amp;iwloc=A" style="color:#FFFF00;text-align:left" target="new">구글지도 보기</a></small>
-                </div>
-            </div>
-        </div>
-				
-        <script>
-            //App custom javascript
-        </script>
-    </body>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Spatial Perception by Object-Aware Visual Scene Representation</span>
+				</a>
+				<br>
+				<strong>Chung-Yeon Lee</strong>, Hyundo Lee, Injune Hwang, Byoung-Tak Zhang
+				<br>
+				<em>ICCV 2019 Workshop on Deep Learning for Visual SLAM</em>, 2019
+				<br>
+				<a href="https://openaccess.thecvf.com/content_ICCVW_2019/papers/DL4VSLAM/Lee_Spatial_Perception_by_Object-Aware_Visual_Scene_Representation_ICCVW_2019_paper.pdf" target="_blank">paper</a>
+				<p>
+				  A spatial perception framework for autonomous robots that enhances traditional geometric scene representations by integrating semantic object-aware features, thereby improving map generation, reducing tracking failures, and enabling more reliable place recognition in both home environments and large-scale indoor datasets like ScanNet.
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// Tidyboy //-->
+			<tr onmouseover="toggleThumb('tidyboy', true)" onmouseout="toggleThumb('tidyboy', false)">
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='tidyboy'><video  width=100% height=100% muted autoplay loop>
+				    <source src="images/tidyboy.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+				  </div>
+				  <img src='images/tidyboy.png' width=100%>
+				</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Tidyboy</span>
+				</a>
+				<br>
+				<a href="https://www.tandfonline.com/doi/full/10.1080/01691864.2022.2111229", target="_blank"><em>Advanced Robotics</em>, 2022 </a><br>
+				<a href="https://link.springer.com/chapter/10.1007/978-3-030-98682-7_24", target="_blank"><em>RoboCup 2021: Robot World Cup XXIV</em>, 2022</a><br>
+				<a href="https://www.youtube.com/results?search_query=tidyboy+robocup" target="_blank">Youtube videos</a>
+				<p>
+				  Team Tidyboy is a robotics challenge team dedicated to solving home service tasks by integrating multiple AI models, including verbal and nonverbal human-robot interaction, 3D perception of known and unknown objects, and manipulation of various items through coordinated use of both the manipulator and the robot’s base.
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// Aupair //-->
+			<tr onmouseover="toggleThumb('aupair', true)" onmouseout="toggleThumb('aupair', false)">
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='aupair'><video  width=100% height=100% muted autoplay loop>
+				    <source src="images/aupair.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+				  </div>
+				  <img src='images/aupair.png' width=100%>
+				</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Aupair</span>
+				</a>
+				<br>
+				<a href="https://aaai.org/papers/11367-perception-action-learning-system-for-mobile-social-service-robots-using-deep-learning/" target="_blank"><em>AAAI Conference
+on Artificial Intelligence (AAAI)</em>, 2018</a><br>
+				<a href="https://www.youtube.com/@team-aupair4606" target="_blank">Youtube videos</a>
+				<p>
+				  Team Aupair aims to develop intelligent mobile cognitive robots with a machine learning. We envision a new paradigm of service robot with state-of-the-art deep learning methods to carry out difficult and complex real world tasks. We propose a novel integrated perception system for service robots which provides an elastic parallel pipeline to integrate multimodal vision modules, including state-of-the- art deep learning models. On top of that, we deploy highly sophisticated modules such as socially-aware navigation, visual question-answering, and schedule learning.
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// DMA //-->
+			<tr onmouseover="toggleThumb('dma_ijcai', true)" onmouseout="toggleThumb('dma_ijcai', false)">
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='dma_ijcai'><img src='images/dma2.png' width=100%></div>
+				  <img src='images/dma1.png' width=100%>
+				</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Dual-memory neural networks for modeling cognitive activities of humans via wearable sensors</span>
+				</a>
+				<br>
+				Sang-Woo Lee, <strong>Chung-Yeon Lee</strong>, Dong-Hyun Kwak, Jung-Woo Ha, Jeonghee Kim, Byoung-Tak Zhang
+				<br>
+				<a href="https://dl.acm.org/doi/10.5555/3060832.3060854" target="_blank"><em>Neural Network</em>, 2017</a>
+				<br>
+				<a href="https://www.ijcai.org/Proceedings/16/Papers/239.pdf" target="_blank"><em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2016</a>
+				<br>
+				<p>
+				  We propose a dual-memory deep learning architecture for lifelong learning of everyday human behaviors from non-stationary data streams, combining a slow-changing global memory with a fast-adapting local memory, and demonstrate its effectiveness on real-world datasets including image streams and lifelogs collected over extended periods.
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// CogSci-2014 //-->
+			<tr onmouseover="toggleThumb('cogsci14', true)" onmouseout="toggleThumb('cogsci14', false)">
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='cogsci14'><img src='images/cogsci14_1.png' width=100%></div>
+				  <img src='images/cogsci14_2.png' width=100%>
+				</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Effective EEG Connetivity Analysis of Episodic Memory Retrieval</span>
+				</a>
+				<br>
+				<strong>Chung-Yeon Lee</strong> and Byoung-Tak Zhang
+				<br>
+				<em>Annual Conference of the Cognitive Science Society (CogSci)</em>, 2014
+				<br>
+				<a href="https://escholarship.org/uc/item/0273f1q1" target="_blank">paper</a>
+				<p>
+				  Here we investigate the information flow network of the human brain during episodic memory retrieval.
+				  We have estimated local oscillation amplitudes and asymmetric inter-areal synchronization from EEG recordings in individual cortical anatomy by using source reconstruction techniques and effective connectivity methods during episodic memory retrieval.
+				  The strength and spectro-anatomical patterns of these inter-areal interactions in sub-second time-scales reveal that the episodic memory retrieval involves the increase of information flow and densely interconnected networks between the prefrontal cortex, the medial temporal lobe, and some subregions of the parietal cortex. In this network, interestingly, the SFG acted as a hub, globally interconnected across broad brain regions
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// CogSci-2012 //-->
+			<tr>
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <img src='images/cogsci12.png' width=100%>
+				</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Neural correlates of episodic memory formation in audio-visual pairing tasks</span>
+				</a>
+				<br>
+				<strong>Chung-Yeon Lee</strong>, Beom-Jin Lee, and Byoung-Tak Zhang
+				<br>
+				<em>Annual Conference of the Cognitive Science Society (CogSci)</em>, 2012
+				<br>
+				<a href="https://escholarship.org/uc/item/1qp8108z" target="_blank">paper</a>
+				<p>
+				  We demonstrate a memory experiment that employs audio-visual movies as naturalistic stimuli. EEG recorded during memory formation show that oscillatory activities in the theta frequency bands on the left parietal lobe, and gamma frequency bands on the temporal lobes are related to overall memory formation. Theta and gamma power of the frontal lobes, and gamma power of the occipital lobes were both increased during retrieval tasks.
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// NIPSW-2012 //-->
+			<tr>
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <img src='images/nipsw12.png' width=100%>
+				</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Place awareness learned by mobile vision-GPS sensor data</span>
+				</a>
+				<br>
+				<strong>Chung-Yeon Lee</strong>, Jung-Woo Ha, Beom-Jin Lee, Woo-Sung Kang and Byoung-Tak Zhang
+				<br>
+				<em>NIPS 2012 Workshop on Machine Learning Approaches to Mobile Context Awareness</em>, 2012
+				<br>
+				<a href="https://d1wqtxts1xzle7.cloudfront.net/89692870/NIPS2012_MLMCAWS_LeeCY-libre.pdf?1660568741=&response-content-disposition=inline%3B+filename%3DPlace_Awareness_Learned_by_Mobile_Vision.pdf&Expires=1758109837&Signature=aLScMFaTLCZz6NSyn5To0mYIAwnO1-7KQjwSRWt~-Zvdwc9Jy~cDBlnpkVE3dkb9isvwJL13mIl35Sf~6Tc5LbbgcNmuVuWGf1wsc~YMxQfXOTxuVM0R~SRxZ6h6ZdSQ5s~K49ElfEzMCSDaajVjUvJfSUxPVcvUoTLfLMcztNk-Yy~uwMuas6o-nqUch-NntjdiN18CY4zYu1E4yBtIAwOzRSbqOVGKXU6oxMCoDB6MEh531bSLrT2J7OtwZTLY-qQWiJlJXxvnVg4yD7U8JIBkR4jHvOaM~hh77HExmmKB-lPgmnfCpf6K0HMwEQKkr0QVe6948qLcVJxrbO7d2A__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank">paper</a>
+				<p>
+				  Recognizing the type of place a person is in (e.g., classroom, hallway, restaurant, outdoor) using photographs taken by a smartphone camera combined with GPS information, by training a modified SVM classifier where image features (SIFT) are the inputs and GPS serves as weighting information.
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// SRFM //-->
+			<tr onmouseover="toggleThumb('srfm', true)" onmouseout="toggleThumb('srfm', false)">
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='srfm'><video  width=100% height=100% muted autoplay loop>
+				    <source src="images/srfm.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+				  </div>
+				  <img src='images/srfm.png' width=100%>
+				</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Multi-layer structural wound synthesis on 3D face</span>
+				</a>
+				<br>
+				<strong>Chung-Yeon Lee</strong>, Sangyong Lee, and Seongah Chin
+				<br>
+				<em>Journal of Computer Animation and Virtual Worlds</em>, 2011<br>
+				 <em>International Conference on Computer Animation and Social Agents (CASA)</em>, 2011
+				<br>
+				<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/cav.399" target="_blank">paper</a>
+				<p>
+				  Here, we propose multi-layer structural wound synthesis on a 3D face.
+				  The approach first defines the facial tissue depth map to measure details at various locations on the face.
+				  Each layer of skin in a wound image has been determined by hue-based segmentation.
+				  In addition, we have employed disparity parameters to realise 3D depth in order to make a wound model volumetric.
+				  Finally, we validate our methods using 3D wound simulation experiments.
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// Eface //-->
+			<tr onmouseover="toggleThumb('eface', true)" onmouseout="toggleThumb('eface', false)">
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='eface'><video  width=100% height=100% muted autoplay loop>
+				    <source src="images/eface.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+				  </div>
+				  <img src='images/eface.png' width=100%>
+				</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">An automatic method for motion capture-based exaggeration of facial expressions with personality types</span>
+				</a>
+				<br>
+				Seongah Chin, <strong>Chung-Yeon Lee</strong>, Jaedong Lee
+				<br>
+				<em>Virtual Reality</em>, 2011
+				<br>
+				<a href="https://link.springer.com/article/10.1007/s10055-013-0227-8" target="_blank">paper</a>
+				<p>
+				  We propose an automatic method for exaggeration of facial expressions from motion-captured data with a certain personality type.
+				  The exaggerated facial expressions are generated by using the exaggeration mapping (EM) that transforms facial motions into exaggerated motions.
+				  As all individuals do not have identical personalities, a conceptual mapping of the individual’s personality type for exaggerating facial expressions needs to be considered.
+				  The Myers–Briggs type indicator, which is a popular method for classifying personality types, is employed to define the personality-type-based EM.
+				  Further, we have experimentally validated the EM and simulations of facial expressions.
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// CGVR-2009 //-->
+			<tr>
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <img src='images/cgvr09.png' width=100%>
+				</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Personal style and Non-negative matrix factorization based exaggerative expressions of face</span>
+				</a>
+				<br>
+				Seongah Chin, <strong>Chung-Yeon Lee</strong>, Jaedong Lee
+				<br>
+				<em>International Conference on Computer Graphics & Virtual Reality (CGVR)</em>, 2009
+				<br>
+				<a href="https://d1wqtxts1xzle7.cloudfront.net/103607698/cgvr6679-libre.pdf?1687343623=&response-content-disposition=inline%3B+filename%3DPersonal_Style_and_Non_Negative_Matrix_F.pdf&Expires=1758111179&Signature=XV0SW7oQml0IwPhykynR3~6FXv8IuG~oWeC0~u2j66TJOs5A6RKZ3J-L47F7jML-s36yanGzmUz71nmRuHtllfxGoLt4eqgFAiJvmIDY2RpgtkIMYNCxOIk1q-P2n44SM5e4LoLmYtziu8xRnANDYQm1q57420s8DUWbXlA97OICKlFjaN8jGJGci82sIrwj3mSNfgNEfHcvJoN036fMhVY7M~xWhgARLiVX8OjR4vnUI6T0TE7V~bhmSpssiuteWPf2rVub3weo5dY5pHOMnFKKt2BfcZWIcYl602umIADDw7jBaCvfrDdSK-tNtsiZ2QnQxsE9doow9Zqbr437RA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank">paper</a>
+				<p>
+				  We propose a method to generate exaggerated facial expressions based on individual personal styles by applying Non-Negative Matrix Factorization (NMF) to decompose facial motion data, then enhancing expression intensity using a style-dependent exaggeration rate (SER).
+				  Experiments show that this approach effectively produces subtle, personalized exaggerations across various basic emotions such as happiness, sadness, and surprise.
+				</p>
+			  </td>
+			</tr>
+			
+			<!--// Starsh //-->
+			<tr onmouseover="toggleThumb('starsh', true)" onmouseout="toggleThumb('starsh', false)">
+			  <td style="padding:16px;width:20%;vertical-align:middle">
+				<div class="imgbox">
+				  <div class="fade" id='starsh'><video  width=100% height=100% muted autoplay loop>
+				    <source src="images/starsh.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+				  </div>
+				  <img src='images/starsh.png' width=100%>
+				</div>
+			  </td>
+			  <td style="padding:8px;width:80%;vertical-align:middle">
+				<a href="#">
+				  <span class="papertitle">Leadership and self-propelled behavior based autonomous virtual fish motion</span>
+				</a>
+				<br>
+				Seongah Chin, <strong>Chung-Yeon Lee</strong>, Jaedong Lee
+				<br>
+				<em> International Conference on Convergence and hybrid Information Technology (ICCIT)</em>, 2008
+				<br>
+				<a href="https://ieeexplore.ieee.org/abstract/document/4682048" target="_blank">paper</a>
+				<p>
+				  We present a method of shoal motion with an effective leadership of autonomous virtual fish.
+				  Shoal motion is led by a leader and computed by five steering behavior vectors including cohesion, separation, velocity, escape and goal vectors.
+				  Through experiments, we demonstrate that a leader of the motion simulation has great effect in leadership and great accuracy to guide the group.
+				</p>
+			  </td>
+			</tr>
+			
+		  </tbody></table>
+
+		  <!--// Footage //-->
+		  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  *Last update in September 2025
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
