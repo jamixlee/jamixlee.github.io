@@ -134,3 +134,38 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+.collapsible{
+    display:block;
+    width:100%;
+    padding:10px 14px;
+    background:#f2f2f2;
+    border: none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    border-radius:6px;
+  }
+.collapsible.active{ background:#e0e0e0; }
+.content{
+    max-height:0;
+    overflow:hidden;
+    transition: max-height 0.25s ease;
+    background:#fff;
+    padding:0 14px;
+    border-radius:6px;
+    box-sizing:border-box;
+  }
+.content p{ margin:12px 0; }
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 10px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}

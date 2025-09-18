@@ -1,467 +1,576 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Chung-Yeon Lee</title>
-
-    <meta name="author" content="Chung-Yeon Lee">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	
-	<script type="text/javascript">
-	  function toggleThumb(id, show) {
-		document.getElementById(id).style.opacity = show ? "1" : "0";
-	  }
-	</script>
-	
-	<script type="text/javascript">
-	  window.onload = function() {
-		toggleThumb('placenet', false);
-		toggleThumb('icra22', false);
-		toggleThumb('vpf', false);
-		toggleThumb('ovslam', false);
-		toggleThumb('tidyboy', false);
-		toggleThumb('aupair', false);
-		toggleThumb('dma_ijcai', false);
-		toggleThumb('cogsci14', false);
-		toggleThumb('srfm', false);
-		toggleThumb('eface', false);
-		toggleThumb('starsh', false);
-	  }
-	</script>
-    
-  </head>
-
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">Chung-Yeon Lee</p>
-				<p>
-                  I'm a research scientist at <a href="https://surromind.ai/">Surromind</a> in Seoul, where I lead a small research team focused on multimodal, physical, and generative AI models and their applications across various domains.
-				  At Surromind, I've worked on sound- and vibration-based fault diagnosis systems, service and field robot learning, and generative models (LLM, VLM, VLA), among others.
-				  I did my PhD at Seoul National University, where I was advised by <a href="https://bi.snu.ac.kr/members/byoung-tak-zhang.html">Byoung-Tak Zhang</a>.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:jamixlee@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="./cylee_cv.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=IyT-d80AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jamixlee/">Github</a>
-                </p>
-              </td>
-              <!--// Profile Picture //-->
-			  <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/cylee_profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" src="images/cylee_profile.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          
-		  <!--// Research //-->
-		  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-				  I'm interested in bridging AI and service robots, aiming to build intelligent agents capable of spatial reasoning, high-level planning, and adaptive interaction in complex real-world environments.
-				  <!--// Some papers are <span class="highlight">highlighted</span>. //-->
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          
-		  <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-			<!--// PlaceNet //-->
-			<tr onmouseover="toggleThumb('placenet', true)" onmouseout="toggleThumb('placenet', false)"> <!--// bgcolor="#ffffd0" //-->
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='placenet'><video  width=100% height=100% muted autoplay loop>
-				    <source src="images/placenet.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-				  </div>
-				  <img src='images/placenet.jpg' width="160">
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">PlaceNet: Neural Spatial Representation Learning with Multimodal Attention</span>
-				</a>
-				<br>
-				<strong>Chung-Yeon Lee</strong>, Youngjae Yoo, Byoung-Tak Zhang
-				<br>
-				<em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2022</font>
-				<br>
-				<a href="https://github.com/jamixlee/placenet" target="_blank">code</a>
-				/
-				<a href="https://www.ijcai.org/proceedings/2022/0144.pdf" target="_blank">paper</a>
-				/
-				<a href="https://ijcai-22.org/video/index0039.html?vid=38984936" target="_blank">video</a>
-				<p></p>
-				<p>
-				A multimodal attention-based neural representation model that integrates RGB, depth, and semantic information to enable generalizable spatial representations and novel-view rendering across diverse indoor environments.
-				</p>
-			  </td>
-			</tr>
-
-			<!--// Multimodal Anomaly Detection //-->
-			<tr onmouseover="toggleThumb('icra22', true)" onmouseout="toggleThumb('icra22', false)">
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='icra22'><video  width=100% height=100% muted autoplay loop>
-				    <source src="images/icra22.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-				  </div>
-				  <img src='images/icra22.jpg' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-					<span class="papertitle">Multimodal Anomaly Detection based on Deep Auto-Encoder for Object Slip Perception of Mobile Manipulation Robots</span>
-				</a>
-				<br>
-				Youngjae Yoo*, <strong>Chung-Yeon Lee</strong>*, Byoung-Tak Zhang
-				<br>
-				<em>International Conference on Robotics and Automation (ICRA)</em>, 2022</font>
-				<br>
-				<a href="https://arxiv.org/abs/2403.03563" target="_blank">paper</a>
-				/
-				<a href="https://youtu.be/_5ST5rr59cA" target="_blank">video</a>
-				<p></p>
-				<p>
-				A deep autoencoder framework combining RGB, depth, audio, and force-torque sensor data to detect object slip anomalies in mobile manipulation robots by learning latent representations of normal conditions and identifying deviations in real-world noisy environments.
-				</p>
-			  </td>
-			</tr>
-
-			<!--// Visual Perception Framework //-->
-			<tr onmouseover="toggleThumb('vpf', true)" onmouseout="toggleThumb('vpf', false)">
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='vpf'><video  width=100% height=100% muted autoplay loop>
-				    <source src="images/vpf.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-				  </div>
-				  <img src='images/vpf.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Visual perception framework for an intelligent mobile robot</span>
-				</a>
-				<br>
-				<strong>Chung-Yeon Lee</strong>, Hyundo Lee, Injune Hwang, Byoung-Tak Zhang
-				<br>
-				<em> International Conference on Ubiquitous Robots and Ambient Intelligence (UR)</em>, 2020
-				<br>
-				<a href="https://ieeexplore.ieee.org/document/9144932" target="_blank">paper</a> /
-				<a href="https://youtu.be/D-ZuQt9NHI0" target="_blank">video</a>
-				<p>
-				  ROS-based visual perception framework that integrates various deep learning methods for object recognition, person identification, human pose estimation, scene captioning, and object-aware navigation.
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// Object-aware VSLAM //-->
-			<tr onmouseover="toggleThumb('ovslam', true)" onmouseout="toggleThumb('ovslam', false)">
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='ovslam'><video  width=100% height=100% muted autoplay loop>
-				    <source src="images/ovslam.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-				  </div>
-				  <img src='images/ovslam.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Spatial Perception by Object-Aware Visual Scene Representation</span>
-				</a>
-				<br>
-				<strong>Chung-Yeon Lee</strong>, Hyundo Lee, Injune Hwang, Byoung-Tak Zhang
-				<br>
-				<em>ICCV 2019 Workshop on Deep Learning for Visual SLAM</em>, 2019
-				<br>
-				<a href="https://openaccess.thecvf.com/content_ICCVW_2019/papers/DL4VSLAM/Lee_Spatial_Perception_by_Object-Aware_Visual_Scene_Representation_ICCVW_2019_paper.pdf" target="_blank">paper</a>
-				<p>
-				  A spatial perception framework for autonomous robots that enhances traditional geometric scene representations by integrating semantic object-aware features, thereby improving map generation, reducing tracking failures, and enabling more reliable place recognition in both home environments and large-scale indoor datasets like ScanNet.
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// Tidyboy //-->
-			<tr onmouseover="toggleThumb('tidyboy', true)" onmouseout="toggleThumb('tidyboy', false)">
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='tidyboy'><video  width=100% height=100% muted autoplay loop>
-				    <source src="images/tidyboy.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-				  </div>
-				  <img src='images/tidyboy.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Tidyboy</span>
-				</a>
-				<br>
-				<a href="https://www.tandfonline.com/doi/full/10.1080/01691864.2022.2111229", target="_blank"><em>Advanced Robotics</em>, 2022 </a><br>
-				<a href="https://link.springer.com/chapter/10.1007/978-3-030-98682-7_24", target="_blank"><em>RoboCup 2021: Robot World Cup XXIV</em>, 2022</a><br>
-				<a href="https://www.youtube.com/results?search_query=tidyboy+robocup" target="_blank">Youtube videos</a>
-				<p>
-				  Team Tidyboy is a robotics challenge team dedicated to solving home service tasks by integrating multiple AI models, including verbal and nonverbal human-robot interaction, 3D perception of known and unknown objects, and manipulation of various items through coordinated use of both the manipulator and the robot’s base.
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// Aupair //-->
-			<tr onmouseover="toggleThumb('aupair', true)" onmouseout="toggleThumb('aupair', false)">
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='aupair'><video  width=100% height=100% muted autoplay loop>
-				    <source src="images/aupair.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-				  </div>
-				  <img src='images/aupair.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Aupair</span>
-				</a>
-				<br>
-				<a href="https://aaai.org/papers/11367-perception-action-learning-system-for-mobile-social-service-robots-using-deep-learning/" target="_blank"><em>AAAI Conference
-on Artificial Intelligence (AAAI)</em>, 2018</a><br>
-				<a href="https://www.youtube.com/@team-aupair4606" target="_blank">Youtube videos</a>
-				<p>
-				  Team Aupair aims to develop intelligent mobile cognitive robots with a machine learning. We envision a new paradigm of service robot with state-of-the-art deep learning methods to carry out difficult and complex real world tasks. We propose a novel integrated perception system for service robots which provides an elastic parallel pipeline to integrate multimodal vision modules, including state-of-the- art deep learning models. On top of that, we deploy highly sophisticated modules such as socially-aware navigation, visual question-answering, and schedule learning.
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// DMA //-->
-			<tr onmouseover="toggleThumb('dma_ijcai', true)" onmouseout="toggleThumb('dma_ijcai', false)">
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='dma_ijcai'><img src='images/dma2.png' width=100%></div>
-				  <img src='images/dma1.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Dual-memory neural networks for modeling cognitive activities of humans via wearable sensors</span>
-				</a>
-				<br>
-				Sang-Woo Lee, <strong>Chung-Yeon Lee</strong>, Dong-Hyun Kwak, Jung-Woo Ha, Jeonghee Kim, Byoung-Tak Zhang
-				<br>
-				<a href="https://dl.acm.org/doi/10.5555/3060832.3060854" target="_blank"><em>Neural Network</em>, 2017</a>
-				<br>
-				<a href="https://www.ijcai.org/Proceedings/16/Papers/239.pdf" target="_blank"><em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2016</a>
-				<br>
-				<p>
-				  We propose a dual-memory deep learning architecture for lifelong learning of everyday human behaviors from non-stationary data streams, combining a slow-changing global memory with a fast-adapting local memory, and demonstrate its effectiveness on real-world datasets including image streams and lifelogs collected over extended periods.
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// CogSci-2014 //-->
-			<tr onmouseover="toggleThumb('cogsci14', true)" onmouseout="toggleThumb('cogsci14', false)">
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='cogsci14'><img src='images/cogsci14_1.png' width=100%></div>
-				  <img src='images/cogsci14_2.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Effective EEG Connetivity Analysis of Episodic Memory Retrieval</span>
-				</a>
-				<br>
-				<strong>Chung-Yeon Lee</strong> and Byoung-Tak Zhang
-				<br>
-				<em>Annual Conference of the Cognitive Science Society (CogSci)</em>, 2014
-				<br>
-				<a href="https://escholarship.org/uc/item/0273f1q1" target="_blank">paper</a>
-				<p>
-				  Here we investigate the information flow network of the human brain during episodic memory retrieval.
-				  We have estimated local oscillation amplitudes and asymmetric inter-areal synchronization from EEG recordings in individual cortical anatomy by using source reconstruction techniques and effective connectivity methods during episodic memory retrieval.
-				  The strength and spectro-anatomical patterns of these inter-areal interactions in sub-second time-scales reveal that the episodic memory retrieval involves the increase of information flow and densely interconnected networks between the prefrontal cortex, the medial temporal lobe, and some subregions of the parietal cortex. In this network, interestingly, the SFG acted as a hub, globally interconnected across broad brain regions
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// CogSci-2012 //-->
-			<tr>
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <img src='images/cogsci12.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Neural correlates of episodic memory formation in audio-visual pairing tasks</span>
-				</a>
-				<br>
-				<strong>Chung-Yeon Lee</strong>, Beom-Jin Lee, and Byoung-Tak Zhang
-				<br>
-				<em>Annual Conference of the Cognitive Science Society (CogSci)</em>, 2012
-				<br>
-				<a href="https://escholarship.org/uc/item/1qp8108z" target="_blank">paper</a>
-				<p>
-				  We demonstrate a memory experiment that employs audio-visual movies as naturalistic stimuli. EEG recorded during memory formation show that oscillatory activities in the theta frequency bands on the left parietal lobe, and gamma frequency bands on the temporal lobes are related to overall memory formation. Theta and gamma power of the frontal lobes, and gamma power of the occipital lobes were both increased during retrieval tasks.
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// NIPSW-2012 //-->
-			<tr>
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <img src='images/nipsw12.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Place awareness learned by mobile vision-GPS sensor data</span>
-				</a>
-				<br>
-				<strong>Chung-Yeon Lee</strong>, Jung-Woo Ha, Beom-Jin Lee, Woo-Sung Kang and Byoung-Tak Zhang
-				<br>
-				<em>NIPS 2012 Workshop on Machine Learning Approaches to Mobile Context Awareness</em>, 2012
-				<br>
-				<a href="https://d1wqtxts1xzle7.cloudfront.net/89692870/NIPS2012_MLMCAWS_LeeCY-libre.pdf?1660568741=&response-content-disposition=inline%3B+filename%3DPlace_Awareness_Learned_by_Mobile_Vision.pdf&Expires=1758109837&Signature=aLScMFaTLCZz6NSyn5To0mYIAwnO1-7KQjwSRWt~-Zvdwc9Jy~cDBlnpkVE3dkb9isvwJL13mIl35Sf~6Tc5LbbgcNmuVuWGf1wsc~YMxQfXOTxuVM0R~SRxZ6h6ZdSQ5s~K49ElfEzMCSDaajVjUvJfSUxPVcvUoTLfLMcztNk-Yy~uwMuas6o-nqUch-NntjdiN18CY4zYu1E4yBtIAwOzRSbqOVGKXU6oxMCoDB6MEh531bSLrT2J7OtwZTLY-qQWiJlJXxvnVg4yD7U8JIBkR4jHvOaM~hh77HExmmKB-lPgmnfCpf6K0HMwEQKkr0QVe6948qLcVJxrbO7d2A__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank">paper</a>
-				<p>
-				  Recognizing the type of place a person is in (e.g., classroom, hallway, restaurant, outdoor) using photographs taken by a smartphone camera combined with GPS information, by training a modified SVM classifier where image features (SIFT) are the inputs and GPS serves as weighting information.
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// SRFM //-->
-			<tr onmouseover="toggleThumb('srfm', true)" onmouseout="toggleThumb('srfm', false)">
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='srfm'><video  width=100% height=100% muted autoplay loop>
-				    <source src="images/srfm.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-				  </div>
-				  <img src='images/srfm.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Multi-layer structural wound synthesis on 3D face</span>
-				</a>
-				<br>
-				<strong>Chung-Yeon Lee</strong>, Sangyong Lee, and Seongah Chin
-				<br>
-				<em>Journal of Computer Animation and Virtual Worlds</em>, 2011<br>
-				 <em>International Conference on Computer Animation and Social Agents (CASA)</em>, 2011
-				<br>
-				<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/cav.399" target="_blank">paper</a>
-				<p>
-				  Here, we propose multi-layer structural wound synthesis on a 3D face.
-				  The approach first defines the facial tissue depth map to measure details at various locations on the face.
-				  Each layer of skin in a wound image has been determined by hue-based segmentation.
-				  In addition, we have employed disparity parameters to realise 3D depth in order to make a wound model volumetric.
-				  Finally, we validate our methods using 3D wound simulation experiments.
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// Eface //-->
-			<tr onmouseover="toggleThumb('eface', true)" onmouseout="toggleThumb('eface', false)">
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='eface'><video  width=100% height=100% muted autoplay loop>
-				    <source src="images/eface.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-				  </div>
-				  <img src='images/eface.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">An automatic method for motion capture-based exaggeration of facial expressions with personality types</span>
-				</a>
-				<br>
-				Seongah Chin, <strong>Chung-Yeon Lee</strong>, Jaedong Lee
-				<br>
-				<em>Virtual Reality</em>, 2011
-				<br>
-				<a href="https://link.springer.com/article/10.1007/s10055-013-0227-8" target="_blank">paper</a>
-				<p>
-				  We propose an automatic method for exaggeration of facial expressions from motion-captured data with a certain personality type.
-				  The exaggerated facial expressions are generated by using the exaggeration mapping (EM) that transforms facial motions into exaggerated motions.
-				  As all individuals do not have identical personalities, a conceptual mapping of the individual’s personality type for exaggerating facial expressions needs to be considered.
-				  The Myers–Briggs type indicator, which is a popular method for classifying personality types, is employed to define the personality-type-based EM.
-				  Further, we have experimentally validated the EM and simulations of facial expressions.
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// CGVR-2009 //-->
-			<tr>
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <img src='images/cgvr09.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Personal style and Non-negative matrix factorization based exaggerative expressions of face</span>
-				</a>
-				<br>
-				Seongah Chin, <strong>Chung-Yeon Lee</strong>, Jaedong Lee
-				<br>
-				<em>International Conference on Computer Graphics & Virtual Reality (CGVR)</em>, 2009
-				<br>
-				<a href="https://d1wqtxts1xzle7.cloudfront.net/103607698/cgvr6679-libre.pdf?1687343623=&response-content-disposition=inline%3B+filename%3DPersonal_Style_and_Non_Negative_Matrix_F.pdf&Expires=1758111179&Signature=XV0SW7oQml0IwPhykynR3~6FXv8IuG~oWeC0~u2j66TJOs5A6RKZ3J-L47F7jML-s36yanGzmUz71nmRuHtllfxGoLt4eqgFAiJvmIDY2RpgtkIMYNCxOIk1q-P2n44SM5e4LoLmYtziu8xRnANDYQm1q57420s8DUWbXlA97OICKlFjaN8jGJGci82sIrwj3mSNfgNEfHcvJoN036fMhVY7M~xWhgARLiVX8OjR4vnUI6T0TE7V~bhmSpssiuteWPf2rVub3weo5dY5pHOMnFKKt2BfcZWIcYl602umIADDw7jBaCvfrDdSK-tNtsiZ2QnQxsE9doow9Zqbr437RA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank">paper</a>
-				<p>
-				  We propose a method to generate exaggerated facial expressions based on individual personal styles by applying Non-Negative Matrix Factorization (NMF) to decompose facial motion data, then enhancing expression intensity using a style-dependent exaggeration rate (SER).
-				  Experiments show that this approach effectively produces subtle, personalized exaggerations across various basic emotions such as happiness, sadness, and surprise.
-				</p>
-			  </td>
-			</tr>
-			
-			<!--// Starsh //-->
-			<tr onmouseover="toggleThumb('starsh', true)" onmouseout="toggleThumb('starsh', false)">
-			  <td style="padding:16px;width:20%;vertical-align:middle">
-				<div class="imgbox">
-				  <div class="fade" id='starsh'><video  width=100% height=100% muted autoplay loop>
-				    <source src="images/starsh.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-				  </div>
-				  <img src='images/starsh.png' width=100%>
-				</div>
-			  </td>
-			  <td style="padding:8px;width:80%;vertical-align:middle">
-				<a href="#">
-				  <span class="papertitle">Leadership and self-propelled behavior based autonomous virtual fish motion</span>
-				</a>
-				<br>
-				Seongah Chin, <strong>Chung-Yeon Lee</strong>, Jaedong Lee
-				<br>
-				<em> International Conference on Convergence and hybrid Information Technology (ICCIT)</em>, 2008
-				<br>
-				<a href="https://ieeexplore.ieee.org/abstract/document/4682048" target="_blank">paper</a>
-				<p>
-				  We present a method of shoal motion with an effective leadership of autonomous virtual fish.
-				  Shoal motion is led by a leader and computed by five steering behavior vectors including cohesion, separation, velocity, escape and goal vectors.
-				  Through experiments, we demonstrate that a leader of the motion simulation has great effect in leadership and great accuracy to guide the group.
-				</p>
-			  </td>
-			</tr>
-			
-		  </tbody></table>
-
-		  <!--// Footage //-->
-		  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  *Last update in September 2025
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Chung-Yeon Lee</title>
+  <meta name="author" content="Chung-Yeon Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script type="text/javascript">
+    function toggleThumb(id, show) {
+    document.getElementById(id).style.opacity = show ? "1" : "0";
+    }
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+    toggleThumb('placenet', false);
+    toggleThumb('icra22', false);
+    toggleThumb('vpf', false);
+    toggleThumb('ovslam', false);
+    toggleThumb('tidyboy', false);
+    toggleThumb('aupair', false);
+    toggleThumb('dma_ijcai', false);
+    toggleThumb('cogsci14', false);
+    toggleThumb('srfm', false);
+    toggleThumb('eface', false);
+    toggleThumb('starsh', false);
+    }
+  </script>
+</head>
+<body>
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<tr style="padding:0px">
+  <td style="padding:0px">
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr style="padding:0px">
+      <td style="padding:2.5%;width:63%;vertical-align:middle">
+	    <!--// Introduction //-->
+        <p class="name" style="text-align: center;">
+          Chung-Yeon Lee
+        </p>
+        <p>
+          I'm a research scientist at <a href="https://surromind.ai/" target="_blank">Surromind</a> in Seoul, where I lead a small research team focused on multimodal, physical, and generative AI models and their applications across various domains.
+		  At Surromind, I've worked on sound- and vibration-based fault diagnosis systems, service and field robot learning, and generative models (LLM, VLM, VLA), among others.
+		  I did my PhD at Seoul National University, where I was advised by <a href="https://bi.snu.ac.kr/members/byoung-tak-zhang.html" target="_blank">Byoung-Tak Zhang</a>.
+        </p>
+        <p style="text-align:center">
+          <a href="mailto:jamixlee@gmail.com">Email</a> &nbsp;/&nbsp; <a href="./cylee_cv.pdf" target="_blank">CV</a> &nbsp;/&nbsp; <a href="https://scholar.google.com/citations?user=IyT-d80AAAAJ" target="_blank">Scholar</a> &nbsp;/&nbsp; <a href="https://github.com/jamixlee/" target="_blank">Github</a>
+        </p>
+      </td>
+      <td style="padding:2.5%;width:37%;max-width:37%">
+	    <!--// Profile Picture //-->
+        <a href="images/cylee_profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" src="images/cylee_profile.jpg" class="hoverZoomLink"></a>
+      </td>
+    </tr>
+    </tbody>
     </table>
-  </body>
+    
+	<!--// Research //-->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr>
+      <td style="padding:16px;width:100%;vertical-align:middle">
+        <h2>Research</h2>
+        <p>
+           I'm interested in bridging AI and service robots, aiming to build intelligent agents capable of spatial reasoning, high-level planning, and adaptive interaction in complex real-world environments. 
+          <!--// Some papers are <span class="highlight">highlighted</span>. //-->
+        </p>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <!--// PlaceNet //-->
+    <tr onmouseover="toggleThumb('placenet', true)" onmouseout="toggleThumb('placenet', false)">
+      <!--// bgcolor="#ffffd0" //-->
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='placenet'>
+            <video width=100% height=100% muted autoplay loop>
+            <source src="images/placenet.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+          </div>
+          <img src='images/placenet.jpg' width="160">
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">PlaceNet: Neural Spatial Representation Learning with Multimodal Attention</span>
+        </a>
+        <br>
+        <strong>Chung-Yeon Lee</strong>, Youngjae Yoo, Byoung-Tak Zhang <br>
+        <em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2022</font>
+        <br>
+        <a href="https://github.com/jamixlee/placenet" target="_blank">code</a>
+        / <a href="https://www.ijcai.org/proceedings/2022/0144.pdf" target="_blank">paper</a>
+        / <a href="https://ijcai-22.org/video/index0039.html?vid=38984936" target="_blank">video</a>
+        <p>
+        </p>
+        <p>
+           A multimodal attention-based neural representation model that integrates RGB, depth, and semantic information to enable generalizable spatial representations and novel-view rendering across diverse indoor environments.
+        </p>
+      </td>
+    </tr>
+    <!--// Multimodal Anomaly Detection //-->
+    <tr onmouseover="toggleThumb('icra22', true)" onmouseout="toggleThumb('icra22', false)">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='icra22'>
+            <video width=100% height=100% muted autoplay loop>
+            <source src="images/icra22.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+          </div>
+          <img src='images/icra22.jpg' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">Multimodal Anomaly Detection based on Deep Auto-Encoder for Object Slip Perception of Mobile Manipulation Robots</span>
+        </a>
+        <br>
+         Youngjae Yoo*, <strong>Chung-Yeon Lee</strong>*, Byoung-Tak Zhang <br>
+        <em>International Conference on Robotics and Automation (ICRA)</em>, 2022</font>
+        <br>
+        <a href="https://arxiv.org/abs/2403.03563" target="_blank">paper</a>
+        / <a href="https://youtu.be/_5ST5rr59cA" target="_blank">video</a>
+        <p>
+        </p>
+        <p>
+           A deep autoencoder framework combining RGB, depth, audio, and force-torque sensor data to detect object slip anomalies in mobile manipulation robots by learning latent representations of normal conditions and identifying deviations in real-world noisy environments.
+        </p>
+      </td>
+    </tr>
+    <!--// Visual Perception Framework //-->
+    <tr onmouseover="toggleThumb('vpf', true)" onmouseout="toggleThumb('vpf', false)">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='vpf'>
+            <video width=100% height=100% muted autoplay loop>
+            <source src="images/vpf.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+          </div>
+          <img src='images/vpf.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">Visual perception framework for an intelligent mobile robot</span>
+        </a>
+        <br>
+        <strong>Chung-Yeon Lee</strong>, Hyundo Lee, Injune Hwang, Byoung-Tak Zhang <br>
+        <em> International Conference on Ubiquitous Robots and Ambient Intelligence (UR)</em>, 2020 <br>
+        <a href="https://ieeexplore.ieee.org/document/9144932" target="_blank">paper</a> / <a href="https://youtu.be/D-ZuQt9NHI0" target="_blank">video</a>
+        <p>
+           ROS-based visual perception framework that integrates various deep learning methods for object recognition, person identification, human pose estimation, scene captioning, and object-aware navigation.
+        </p>
+      </td>
+    </tr>
+    <!--// Object-aware VSLAM //-->
+    <tr onmouseover="toggleThumb('ovslam', true)" onmouseout="toggleThumb('ovslam', false)">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='ovslam'>
+            <video width=100% height=100% muted autoplay loop>
+            <source src="images/ovslam.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+          </div>
+          <img src='images/ovslam.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">Spatial Perception by Object-Aware Visual Scene Representation</span>
+        </a>
+        <br>
+        <strong>Chung-Yeon Lee</strong>, Hyundo Lee, Injune Hwang, Byoung-Tak Zhang <br>
+        <em>ICCV 2019 Workshop on Deep Learning for Visual SLAM</em>, 2019 <br>
+        <a href="https://openaccess.thecvf.com/content_ICCVW_2019/papers/DL4VSLAM/Lee_Spatial_Perception_by_Object-Aware_Visual_Scene_Representation_ICCVW_2019_paper.pdf" target="_blank">paper</a>
+        <p>
+           A spatial perception framework for autonomous robots that enhances traditional geometric scene representations by integrating semantic object-aware features, thereby improving map generation, reducing tracking failures, and enabling more reliable place recognition in both home environments and large-scale indoor datasets like ScanNet.
+        </p>
+      </td>
+    </tr>
+    <!--// Tidyboy //-->
+    <tr onmouseover="toggleThumb('tidyboy', true)" onmouseout="toggleThumb('tidyboy', false)">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='tidyboy'>
+            <video width=100% height=100% muted autoplay loop>
+            <source src="images/tidyboy.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+          </div>
+          <img src='images/tidyboy.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">Tidyboy</span>
+        <br>
+        <a href="https://www.tandfonline.com/doi/full/10.1080/01691864.2022.2111229" , target="_blank"><em>Advanced Robotics</em>, 2022 </a><br>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-030-98682-7_24" , target="_blank"><em>RoboCup 2021: Robot World Cup XXIV</em>, 2022</a><br>
+        <a href="https://www.youtube.com/results?search_query=tidyboy+robocup" target="_blank">Youtube videos</a>
+        <p>
+           Team Tidyboy is a robotics challenge team dedicated to solving home service tasks by integrating multiple AI models, including verbal and nonverbal human-robot interaction, 3D perception of known and unknown objects, and manipulation of various items through coordinated use of both the manipulator and the robot’s base.
+        </p>
+      </td>
+    </tr>
+    <!--// Aupair //-->
+    <tr onmouseover="toggleThumb('aupair', true)" onmouseout="toggleThumb('aupair', false)">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='aupair'>
+            <video width=100% height=100% muted autoplay loop>
+            <source src="images/aupair.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+          </div>
+          <img src='images/aupair.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">Aupair</span>
+        <br>
+        <a href="https://aaai.org/papers/11367-perception-action-learning-system-for-mobile-social-service-robots-using-deep-learning/" target="_blank"><em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2018</a><br>
+        <a href="https://www.youtube.com/@team-aupair4606" target="_blank">Youtube videos</a>
+        <p>
+           Team Aupair aims to develop intelligent mobile cognitive robots with a machine learning. We envision a new paradigm of service robot with state-of-the-art deep learning methods to carry out difficult and complex real world tasks. We propose a novel integrated perception system for service robots which provides an elastic parallel pipeline to integrate multimodal vision modules, including state-of-the- art deep learning models. On top of that, we deploy highly sophisticated modules such as socially-aware navigation, visual question-answering, and schedule learning.
+        </p>
+      </td>
+    </tr>
+    <!--// DMA //-->
+    <tr onmouseover="toggleThumb('dma_ijcai', true)" onmouseout="toggleThumb('dma_ijcai', false)">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='dma_ijcai'>
+            <img src='images/dma2.png' width=100%>
+          </div>
+          <img src='images/dma1.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">Dual-memory neural networks for modeling cognitive activities of humans via wearable sensors</span>
+        </a>
+        <br>
+         Sang-Woo Lee, <strong>Chung-Yeon Lee</strong>, Dong-Hyun Kwak, Jung-Woo Ha, Jeonghee Kim, Byoung-Tak Zhang <br>
+        <a href="https://dl.acm.org/doi/10.5555/3060832.3060854" target="_blank"><em>Neural Network</em>, 2017</a>
+        <br>
+        <a href="https://www.ijcai.org/Proceedings/16/Papers/239.pdf" target="_blank"><em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2016</a>
+        <br>
+        <p>
+           We propose a dual-memory deep learning architecture for lifelong learning of everyday human behaviors from non-stationary data streams, combining a slow-changing global memory with a fast-adapting local memory, and demonstrate its effectiveness on real-world datasets including image streams and lifelogs collected over extended periods.
+        </p>
+      </td>
+    </tr>
+    <!--// CogSci-2014 //-->
+    <tr onmouseover="toggleThumb('cogsci14', true)" onmouseout="toggleThumb('cogsci14', false)">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='cogsci14'>
+            <img src='images/cogsci14_1.png' width=100%>
+          </div>
+          <img src='images/cogsci14_2.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">Effective EEG Connetivity Analysis of Episodic Memory Retrieval</span>
+        </a>
+        <br>
+        <strong>Chung-Yeon Lee</strong> and Byoung-Tak Zhang <br>
+        <em>Annual Conference of the Cognitive Science Society (CogSci)</em>, 2014 <br>
+        <a href="https://escholarship.org/uc/item/0273f1q1" target="_blank">paper</a>
+        <p>
+           Here we investigate the information flow network of the human brain during episodic memory retrieval. We have estimated local oscillation amplitudes and asymmetric inter-areal synchronization from EEG recordings in individual cortical anatomy by using source reconstruction techniques and effective connectivity methods during episodic memory retrieval. The strength and spectro-anatomical patterns of these inter-areal interactions in sub-second time-scales reveal that the episodic memory retrieval involves the increase of information flow and densely interconnected networks between the prefrontal cortex, the medial temporal lobe, and some subregions of the parietal cortex. In this network, interestingly, the SFG acted as a hub, globally interconnected across broad brain regions
+        </p>
+      </td>
+    </tr>
+    <!--// CogSci-2012 //-->
+    <tr>
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <img src='images/cogsci12.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">Neural correlates of episodic memory formation in audio-visual pairing tasks</span>
+        </a>
+        <br>
+        <strong>Chung-Yeon Lee</strong>, Beom-Jin Lee, and Byoung-Tak Zhang <br>
+        <em>Annual Conference of the Cognitive Science Society (CogSci)</em>, 2012 <br>
+        <a href="https://escholarship.org/uc/item/1qp8108z" target="_blank">paper</a>
+        <p>
+           We demonstrate a memory experiment that employs audio-visual movies as naturalistic stimuli. EEG recorded during memory formation show that oscillatory activities in the theta frequency bands on the left parietal lobe, and gamma frequency bands on the temporal lobes are related to overall memory formation. Theta and gamma power of the frontal lobes, and gamma power of the occipital lobes were both increased during retrieval tasks.
+        </p>
+      </td>
+    </tr>
+    <!--// NIPSW-2012 //-->
+    <tr>
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <img src='images/nipsw12.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">Place awareness learned by mobile vision-GPS sensor data</span>
+        </a>
+        <br>
+        <strong>Chung-Yeon Lee</strong>, Jung-Woo Ha, Beom-Jin Lee, Woo-Sung Kang and Byoung-Tak Zhang <br>
+        <em>NIPS 2012 Workshop on Machine Learning Approaches to Mobile Context Awareness</em>, 2012 <br>
+        <a href="https://d1wqtxts1xzle7.cloudfront.net/89692870/NIPS2012_MLMCAWS_LeeCY-libre.pdf?1660568741=&response-content-disposition=inline%3B+filename%3DPlace_Awareness_Learned_by_Mobile_Vision.pdf&Expires=1758109837&Signature=aLScMFaTLCZz6NSyn5To0mYIAwnO1-7KQjwSRWt~-Zvdwc9Jy~cDBlnpkVE3dkb9isvwJL13mIl35Sf~6Tc5LbbgcNmuVuWGf1wsc~YMxQfXOTxuVM0R~SRxZ6h6ZdSQ5s~K49ElfEzMCSDaajVjUvJfSUxPVcvUoTLfLMcztNk-Yy~uwMuas6o-nqUch-NntjdiN18CY4zYu1E4yBtIAwOzRSbqOVGKXU6oxMCoDB6MEh531bSLrT2J7OtwZTLY-qQWiJlJXxvnVg4yD7U8JIBkR4jHvOaM~hh77HExmmKB-lPgmnfCpf6K0HMwEQKkr0QVe6948qLcVJxrbO7d2A__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank">paper</a>
+        <p>
+           Recognizing the type of place a person is in (e.g., classroom, hallway, restaurant, outdoor) using photographs taken by a smartphone camera combined with GPS information, by training a modified SVM classifier where image features (SIFT) are the inputs and GPS serves as weighting information.
+        </p>
+      </td>
+    </tr>
+    <!--// SRFM //-->
+    <tr onmouseover="toggleThumb('srfm', true)" onmouseout="toggleThumb('srfm', false)">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='srfm'>
+            <video width=100% height=100% muted autoplay loop>
+            <source src="images/srfm.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+          </div>
+          <img src='images/srfm.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">Multi-layer structural wound synthesis on 3D face</span>
+        </a>
+        <br>
+        <strong>Chung-Yeon Lee</strong>, Sangyong Lee, and Seongah Chin <br>
+        <em>Journal of Computer Animation and Virtual Worlds</em>, 2011<br>
+        <em>International Conference on Computer Animation and Social Agents (CASA)</em>, 2011 <br>
+        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/cav.399" target="_blank">paper</a>
+        <p>
+           Here, we propose multi-layer structural wound synthesis on a 3D face. The approach first defines the facial tissue depth map to measure details at various locations on the face. Each layer of skin in a wound image has been determined by hue-based segmentation. In addition, we have employed disparity parameters to realise 3D depth in order to make a wound model volumetric. Finally, we validate our methods using 3D wound simulation experiments.
+        </p>
+      </td>
+    </tr>
+    <!--// Eface //-->
+    <tr onmouseover="toggleThumb('eface', true)" onmouseout="toggleThumb('eface', false)">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='eface'>
+            <video width=100% height=100% muted autoplay loop>
+            <source src="images/eface.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+          </div>
+          <img src='images/eface.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">An automatic method for motion capture-based exaggeration of facial expressions with personality types</span>
+        </a>
+        <br>
+         Seongah Chin, <strong>Chung-Yeon Lee</strong>, Jaedong Lee <br>
+        <em>Virtual Reality</em>, 2011 <br>
+        <a href="https://link.springer.com/article/10.1007/s10055-013-0227-8" target="_blank">paper</a>
+        <p>
+           We propose an automatic method for exaggeration of facial expressions from motion-captured data with a certain personality type. The exaggerated facial expressions are generated by using the exaggeration mapping (EM) that transforms facial motions into exaggerated motions. As all individuals do not have identical personalities, a conceptual mapping of the individual’s personality type for exaggerating facial expressions needs to be considered. The Myers–Briggs type indicator, which is a popular method for classifying personality types, is employed to define the personality-type-based EM. Further, we have experimentally validated the EM and simulations of facial expressions.
+        </p>
+      </td>
+    </tr>
+    <!--// CGVR-2009 //-->
+    <tr>
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <img src='images/cgvr09.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">Personal style and Non-negative matrix factorization based exaggerative expressions of face</span>
+        </a>
+        <br>
+         Seongah Chin, <strong>Chung-Yeon Lee</strong>, Jaedong Lee <br>
+        <em>International Conference on Computer Graphics & Virtual Reality (CGVR)</em>, 2009 <br>
+        <a href="https://d1wqtxts1xzle7.cloudfront.net/103607698/cgvr6679-libre.pdf?1687343623=&response-content-disposition=inline%3B+filename%3DPersonal_Style_and_Non_Negative_Matrix_F.pdf&Expires=1758111179&Signature=XV0SW7oQml0IwPhykynR3~6FXv8IuG~oWeC0~u2j66TJOs5A6RKZ3J-L47F7jML-s36yanGzmUz71nmRuHtllfxGoLt4eqgFAiJvmIDY2RpgtkIMYNCxOIk1q-P2n44SM5e4LoLmYtziu8xRnANDYQm1q57420s8DUWbXlA97OICKlFjaN8jGJGci82sIrwj3mSNfgNEfHcvJoN036fMhVY7M~xWhgARLiVX8OjR4vnUI6T0TE7V~bhmSpssiuteWPf2rVub3weo5dY5pHOMnFKKt2BfcZWIcYl602umIADDw7jBaCvfrDdSK-tNtsiZ2QnQxsE9doow9Zqbr437RA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank">paper</a>
+        <p>
+           We propose a method to generate exaggerated facial expressions based on individual personal styles by applying Non-Negative Matrix Factorization (NMF) to decompose facial motion data, then enhancing expression intensity using a style-dependent exaggeration rate (SER). Experiments show that this approach effectively produces subtle, personalized exaggerations across various basic emotions such as happiness, sadness, and surprise.
+        </p>
+      </td>
+    </tr>
+    <!--// Starsh //-->
+    <tr onmouseover="toggleThumb('starsh', true)" onmouseout="toggleThumb('starsh', false)">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="imgbox">
+          <div class="fade" id='starsh'>
+            <video width=100% height=100% muted autoplay loop>
+            <source src="images/starsh.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+          </div>
+          <img src='images/starsh.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="#">
+        <span class="papertitle">Leadership and self-propelled behavior based autonomous virtual fish motion</span>
+        </a>
+        <br>
+         Seongah Chin, <strong>Chung-Yeon Lee</strong>, Jaedong Lee <br>
+        <em> International Conference on Convergence and hybrid Information Technology (ICCIT)</em>, 2008 <br>
+        <a href="https://ieeexplore.ieee.org/abstract/document/4682048" target="_blank">paper</a>
+        <p>
+           We present a method of shoal motion with an effective leadership of autonomous virtual fish. Shoal motion is led by a leader and computed by five steering behavior vectors including cohesion, separation, velocity, escape and goal vectors. Through experiments, we demonstrate that a leader of the motion simulation has great effect in leadership and great accuracy to guide the group.
+        </p>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+	
+	<!--// Work Experience //-->
+    <button class="collapsible" aria-expanded="false">Work Experience</button>
+	<div class="content" role="region" aria-hidden="true">
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr>
+      <td style="padding:16px;width:100%;vertical-align:middle">
+        <h2>Work Experience</h2>
+		<ul>
+		  <li>Research Scientist, Surromind, 2016–current</li>
+		  <li>Research Assistant, Biointelligence Laboratory, Seoul National University (advisor: Prof. Byoung-Tak Zhang), 2011-2022</li>
+		  <li>Visiting Researcher, Institute for Artificial Intelligence, Universität Bremen (host: Prof. Michael Beetz), 2018</li>
+		  <li>Visiting Researcher, Artificial Intelligence Group, Universität Bielefeld (host: Prof. Ipke Wachsmuth), 2011</li>
+		  <li>Visiting Researcher, Intelligent Autonomous Systems Group, TUM (host: Prof. Michael Beetz), 2011</li>
+		  <li>Research Assistant, XICOM Laboratory, Sungkyul University (advisor: Prof. Seongah Chin), 2008-2011</li>
+		</ul>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+	</div>
+	<br>
+	
+	<!--// Honors and Awards //-->
+    <button class="collapsible" aria-expanded="false">Honors and Awards</button>
+	<div class="content" role="region" aria-hidden="true">
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr>
+      <td style="padding:16px;width:100%;vertical-align:middle">
+        <h2>Honors and Awards</h2>
+		<h3>[Awards]</h3>
+        <ul>
+		  <li>The Minister Prize for the Winner of AI Championship, Ministry of SMEs and Startups, Korea, 2021</li>
+		  <li>The Minister Prize for the Winner of AI Competition, Ministry of Science and ICT, Korea, 2021</li>
+		  <li>100 Excellent Research Projects of 2018, Ministry of Science and ICT, Korea, 2018</li>
+		  <li>Chief Director Award, Sungkyul University, 2010</li>
+		  <li>Effort Award, International Student Design Festival, Asia-Pacific Engineering Education Congress, 2009</li>
+		</ul>
+		<h3>[Competition Ranked]</h3>
+		<ul>
+		  <li><a href="https://wrs.nedo.go.jp/en/wrs2020/challenge/team/" target="_blank">1st Place</a>, World Robot Challenge 2020, Service Robotics (PRC), Virtual, 2021</li>
+		  <li><a href="https://athome.robocup.org/awards/ target="_blank">1st Place</a>, RoboCup 2021, RoboCup@Home Domestic Standard Platform League, Virtual, 2021</li>
+		  <li><a href="https://www.nextunicorn.kr/content/f58b7ff72831185a" target="_blank">1st Place</a>, AI Championship 2021, Anomaly Detection Task, Ministry of SMEs and Startups, Korea, 2021</li>
+		  <li><a href="https://www.nextunicorn.kr/content/a722f131d6e3dda4" target="_blank">2nd Place</a>, AI Competition 2021, Numerical Analysis Task, Ministry of Science and ICT, Korea, 2021</li>
+		  <li><a href="https://athome.robocup.org/awards/" target="_blank">2nd Place</a>, RoboCup 2019, RoboCup@Home Domestic Standard Platform League, Sydney, Australia, 2019</li>
+		  <li><a href="https://wrs.nedo.go.jp/en/wrc2018/teams/" target="_blank">4th Place</a>, World Robot Summit 2018, Partner Robot Challenge–Real Space, Tokyo, Japan, 2018</li>
+		  <li><a href="https://athome.robocup.org/awards/" target="_blank">4th Place</a>, RoboCup 2018, RoboCup@Home Social Standard Platform League, Montreal, Canada, 2018</li>
+		  <li><a href="https://athome.robocup.org/awards/" target="_blank">1st Place</a>, RoboCup 2017, RoboCup@Home Social Standard Platform League, Nagoya, Japan, 2017</li>
+		</ul>
+		<h3>[Scholarships]</h3>
+		<ul>
+		  <li>Yoon Songyee & Kim Taek-Jin Scholarship, Seoul National University, 2014</li>
+		  <li>Outstanding Student Scholarship, Industry-Academy Cooperation Group, Sungkyul University, 2009</li>
+		  <li>IT Masters Scholarship, KT Corporation, 2008</li>
+		  <li>Digital Venture Pilot Project Fund, Sungkyul University, 2008–2009</li>
+		  <li>Academic Merit Scholarships (6 semesters), Sungkyul University, 2003–2009</li>
+		</ul>
+		<h3>[Conference Awards]</h3>
+		<ul>
+		  <li>Best Technical Demo Award, AAAI Conference on Artificial Intelligence (AAAI-18), 2018</li>
+		  <li>Excellent Student Paper Award, Korea Software Congress (KSC-2018), 2018</li>
+		  <li>Best Paper Award, 2016 Int’l Symposium on Perception, Action, and Cognitive Systems (PACS-2016), 2016</li>
+		  <li>Best Paper Award (2 times), Conferences of KIISE and Korea Computer Congress, 2015–2016</li>
+		  <li>Excellent Presentation Award (8 times), Conferences of KIISE, IEEK, and KCC, 2010–2016</li>
+		</ul>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+	</div>
+	<br>
+	
+	<!--// Academic Services //-->
+    <button class="collapsible" aria-expanded="false">Academic Services</button>
+	<div class="content" role="region" aria-hidden="true">
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr>
+      <td style="padding:16px;width:100%;vertical-align:middle">
+        <h2>Academic Services</h2>
+		<h3>[Program Committee & Reviewer]</h3>
+		<ul>
+		  <li>IEEE Robotics and Automation Letters (RA-L), 2025</li>
+		  <li>Korea Computer Congress (KCC), 2025</li>
+		  <li>IEEE Transactions on Systems, Man, and Cybernetics: Systems (SMCA), 2024</li>
+		  <li>IEEE International Conference on Robotics and Automation (ICRA), 2022</li>
+		  <li>AAAI Conference on Artificial Intelligence (AAAI), 2022</li>
+		  <li>Frontiers in Robotics and AI, 2021</li>
+		</ul>
+
+		<h3>[Invited Talks]</h3>
+		<ul>
+		  <li><em>AI Technology for General-Purpose Robot Intelligence</em>, Robot+AI Seminar, Advantech, Sep 2024</li>
+		  <li><em>Utilization of Generative AI on Media Software</em>, Division of Media Software, Sungkyul University, May 2024</li>
+		  <li><em>Development and Utilization of LLMs</em>, Division of Media Software, Sungkyul University, May 2023</li>
+		  <li><em>Intelligent Agents in Real Life</em>, ETRI, Jul 2021</li>
+		  <li><em>Intelligent Agents in Real Life</em>, Korea Internet Conference (KRnet-2021), Jun 2021</li>
+		  <li><em>Empowering cognitive AI robots with deep learning</em>, HTW-Berlin, Dec 2019</li>
+		  <li><em>How to develop a service robot</em>, Dept. of Biomedical Engineering, Gachon University, Jun 2019</li>
+		  <li><em>AI & social robotics</em>, Division of Media Software, Sungkyul University, Apr 2018</li>
+		  <li><em>Cognitive agents that learn everyday life</em>, Institute for Artificial Intelligence, Uni. Bremen, Jan 2018</li>
+		  <li><em>AI and machine learning</em>, Dept. of Multimedia Engineering, Sungkyul University, Oct 2014</li>
+		  <li><em>Theory and applications of cognitive signal processing</em>, The 1st Tutorials on Cognitive Technology, National Association of Cognitive Science Industries (NACSI), Oct 2014</li>
+		  <li><em>Deep learning</em>, Dept. of Multimedia Engineering, Sungkyul University, Aug 2014</li>
+		  <li><em>Research trends in multimedia engineering</em>, Dept. of Multimedia Engineering, Sungkyul University, Oct 2011</li>
+		</ul>
+
+		<h3>[Teaching & Mentoring]</h3>
+		<ul>
+		  <li>Mentor / ICT Hanium DreamUp Program, IITP, Ministry of Science and ICT, 2025</li>
+		  <li>Lecturer / <em>AI Model Development-Visual Perception</em>, Euclid Soft, 2022</li>
+		  <li>Lecturer / <em>Data Analysis & AI Program</em>, YBM Career Campus, 2021</li>
+		  <li>Lecturer / <em>Introduction and Practices on Machine Learning</em>, Doosan Corporation, 2017</li>
+		  <li>Lecturer / <em>Tutorials on Machine Learning and Deep Learning</em>, Sungshin University, 2017</li>
+		  <li>Lecturer / <em>Deep Learning Tutorial</em>, National Association of Cognitive Science Industries (NACSI), 2016</li>
+		  <li>Mentor / Academic Counselling Program, College of Liberal Studies, Seoul National University, 2014</li>
+		  <li>Mentor / <em>Discrete Mathematics</em>, Department of Computer Science and Engineering, Seoul National University, 2014</li>
+		  <li>TA / <em>Computational Modeling of Intelligence</em>, Interdisciplinary Program in Cognitive Science, Seoul National University, 2012</li>
+		  <li>TA / <em>Brain, Computation, and Neural Learning</em>, Brain-Cognition-Behavior (BCB) Course, Seoul National University, 2011</li>
+		  <li>TA / <em>Computational Modeling of Intelligence</em>, Interdisciplinary Program in Cognitive Science, Seoul National University, 2011</li>
+		</ul>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+	</div>
+	
+    <!--// Footage //-->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr>
+      <td style="padding:0px">
+        <br>
+        <p style="text-align:right;font-size:small;">
+           *Last update in September 2025
+        </p>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+  </td>
+</tr>
+</table>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function(){
+	  const buttons = document.querySelectorAll('.collapsible');
+	  buttons.forEach(btn => {
+		btn.addEventListener('click', function(){
+		  const content = this.nextElementSibling;
+		  if (!content) return;
+		  const expanded = this.getAttribute('aria-expanded') === 'true';
+		  this.setAttribute('aria-expanded', String(!expanded));
+		  content.setAttribute('aria-hidden', String(expanded));
+		  this.classList.toggle('active');
+		  if (content.style.maxHeight){
+			content.style.maxHeight = null;
+		  } else {
+			content.style.maxHeight = content.scrollHeight + 'px';
+		  }
+		});
+	  });
+	});
+</script>
+
+</body>
 </html>
